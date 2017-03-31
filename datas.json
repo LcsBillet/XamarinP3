@@ -1,0 +1,49 @@
+{
+  "utilisateur": [
+    { "id": 0,
+      "nom": null,
+      "prenom": null,
+      "date_nai": null,
+      "img": null,
+      "tl_matin": null,
+      "tr_matin": null,
+      "tl_midi": null,
+      "tr_midi": null,
+      "tl_gouter": null,
+      "tr_gouter": null,
+      "tl_soir": null,
+      "tr_soir": null
+    }
+  ],
+  "produit": [
+    {
+      "id": 0,
+      "lib": null,
+      "img": null,
+      "id_cat": null,
+      "gl_lents": null,
+      "gl_rapides": null
+    }
+  ],
+  "categorie": [
+    {
+      "id": 0,
+      "lib": null,
+      "img": null
+    }
+  ],
+  "menu": [
+    {
+      "id": 0,
+      "lib": null,
+      "img": null
+    }
+  ],
+  "menu_produit": [
+    {
+      "id": 0,
+      "id_prod": null,
+      "id_menu": null
+    }
+  ]
+ }
