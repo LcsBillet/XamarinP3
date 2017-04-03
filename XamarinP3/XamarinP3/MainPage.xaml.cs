@@ -13,5 +13,10 @@ namespace XamarinP3
 		{
 			InitializeComponent();
 		}
+
+        public void OnSave(object sender, EventArgs args)
+        {
+
+        }
 	}
 }

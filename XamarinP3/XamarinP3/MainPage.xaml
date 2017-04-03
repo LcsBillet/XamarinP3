@@ -2,10 +2,140 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinP3"
-             x:Class="XamarinP3.MainPage">
+            x:Class="XamarinP3.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+    <Label Text="Welcome to Xamarin Forms!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
+
+    <ScrollView>
+
+
+            <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="White">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Profil" FontAttributes="Bold" HorizontalOptions="Center" FontSize="50" TextColor="Black" Grid.Column="1" Grid.ColumnSpan="4"/>
+
+
+                <Label Text="Veuillez saisir les informations de votre enfant" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Grid.ColumnSpan="6"/>
+
+                <Entry Placeholder="Prénom" Text="{Binding firstname, Mode=TwoWay}" BackgroundColor = "#E2E0DE" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4"/>
+
+                <Entry Placeholder="Nom" Text="{Binding lastname, Mode=TwoWay}" BackgroundColor = "#E2E0DE" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4"/>
+                
+                <Label Text="Date de naissance" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4"/>
+                
+                <DatePicker Date="{Binding birthdate, Mode=TwoWay}" BackgroundColor = "#E2E0DE" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="4"/>
+            <Label Text="Genre" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="4"/>
+                <Picker x:Name="genderPicker" SelectedIndex="{Binding Gender, Mode=TwoWay}" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="4">
+                <Picker.Items>
+                    <x:String>Garçon</x:String>
+                    <x:String>Fille</x:String>
+                </Picker.Items>
+            </Picker>
+                
+                <Label Text="Quantité de glucides nécessaire pour chaque repas" HorizontalOptions="Center" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="6"/>
+
+            <Label Text="Petit déjeuner" HorizontalOptions="Center" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="4"/>
+            <Label Text="Glucides lents matin" HorizontalOptions="Center" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult1" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider1}}" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3"/>
+            <Slider x:Name="mySlider1" Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+
+                <Label Text="Glucides rapides matin" HorizontalOptions="Center"  Grid.Row="10" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult2" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider2}}"  Grid.Row="11" Grid.Column="3" Grid.ColumnSpan="3"/>
+            <Slider 
+                    x:Name="mySlider2"  Grid.Row="12" Grid.Column="3" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            >
+            </Slider>
+            <Label Text="Midi" HorizontalOptions="Center" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="4"/>
+            <Label Text="Glucides lents midi" HorizontalOptions="Center" Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult3" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider3}}" Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Slider x:Name="mySlider3" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+
+                <Label Text="Glucides rapides midi" HorizontalOptions="Center" Grid.Row="14" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult4" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider4}}" Grid.Row="15" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Slider x:Name="mySlider4" Grid.Row="16" Grid.Column="3" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+            <Label Text="Gouter" HorizontalOptions="Center" Grid.Row="17" Grid.Column="1" Grid.ColumnSpan="4"/>
+            <Label Text="Glucides lents gouter" HorizontalOptions="Center" Grid.Row="18" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult5" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider5}}" Grid.Row="19" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Slider x:Name="mySlider5" Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+
+                <Label Text="Glucides rapides gouter" HorizontalOptions="Center" Grid.Row="18" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult6" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider6}}" Grid.Row="19" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Slider x:Name="mySlider6" Grid.Row="20" Grid.Column="3" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+
+            <Label Text="Diner" HorizontalOptions="Center" Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="4"/>
+            <Label Text="Glucides lents soir" HorizontalOptions="Center" Grid.Row="22" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult7" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider7}}" Grid.Row="23" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Slider x:Name="mySlider7" Grid.Row="24" Grid.Column="0" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+
+                <Label Text="Glucides rapides soir" HorizontalOptions="Center" Grid.Row="22" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Label x:Name="txtResult8" HorizontalOptions="Center" FontSize="Default" Text="{Binding Value,Source={x:Reference mySlider8}}" Grid.Row="23" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <Slider x:Name="mySlider8" Grid.Row="24" Grid.Column="3" Grid.ColumnSpan="3"
+            Minimum="0"
+            Maximum="100"
+            />
+
+
+            <Button Text="Inscription" Grid.Row="25" Grid.Column="1" Grid.ColumnSpan="4" BackgroundColor = "#75BD9E" BorderRadius="50" 
+                    Clicked="OnSave" />
+
+            </Grid>
+
+    </ScrollView>
+
 
 </ContentPage>
