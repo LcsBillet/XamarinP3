@@ -2,8 +2,13 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+<<<<<<< HEAD
     <ResolvedResourceDirectory>E:\AppliDiab\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>E:\AppliDiab\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+=======
+    <ResolvedResourceDirectory>D:\DOCUMENTS\Visual Studio 2015\Projects\XamarinP3\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\DOCUMENTS\Visual Studio 2015\Projects\XamarinP3\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+>>>>>>> 927e354a585a751cf3fe050189fbf76f0508b283
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
@@ -11,7 +16,12 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+<<<<<<< HEAD
     <ResolvedResourceDirectoryStamp>E:\AppliDiab\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>E:\AppliDiab\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+=======
+    <ResolvedResourceDirectoryStamp>D:\DOCUMENTS\Visual Studio 2015\Projects\XamarinP3\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\DOCUMENTS\Visual Studio 2015\Projects\XamarinP3\XamarinP3\XamarinP3.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+>>>>>>> 927e354a585a751cf3fe050189fbf76f0508b283
   </ResolvedResourceDirectoryStamps>
 </Paths>

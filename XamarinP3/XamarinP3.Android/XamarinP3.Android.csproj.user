@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+<<<<<<< HEAD
     <SelectedDevice>Asus _Z00LD</SelectedDevice>
     <DefaultDevice>VisualStudio_android-23_arm_phone</DefaultDevice>
+=======
+    <SelectedDevice>Android_Accelerated_x86</SelectedDevice>
+    <DefaultDevice>Android_Accelerated_x86</DefaultDevice>
+>>>>>>> 927e354a585a751cf3fe050189fbf76f0508b283
   </PropertyGroup>
 </Project>
